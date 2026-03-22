@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASF 대응 통합 매뉴얼</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-icon"><i class="ri-shield-cross-line"></i></div>
+        <h1 class="logo-title">ASF 대응 매뉴얼</h1>
+      </div>
+      <nav class="nav-menu">
+        <button class="nav-item active" data-tab="tab-map">
+          <i class="ri-map-pin-line"></i>
+          <span>ASF 발생현황</span>
+        </button>
+        <button class="nav-item" data-tab="tab-hunter">
+          <i class="ri-focus-3-line"></i>
+          <span>수렵인 행동수칙</span>
+        </button>
+        <button class="nav-item" data-tab="tab-official">
+          <i class="ri-government-line"></i>
+          <span>지자체 소관 매뉴얼</span>
+        </button>
+      </nav>
+      <div class="sidebar-footer">
+        <p class="footer-text">© 2026 KOWAPS ASF Response Center</p>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      
+      <!-- TAB 1: Map -->
+      <section id="tab-map" class="content-section active">
+        <div class="map-wrapper">
+          <iframe src="asf_status.html" title="ASF 발생현황 지도" class="map-iframe"></iframe>
+        </div>
+      </section>
+
+      <!-- TAB 2: Hunter Manual -->
+      <section id="tab-hunter" class="content-section">
+        <div class="section-header">
+          <h2>수렵인(엽사) ASF 대응 행동수칙</h2>
+          <p class="subtitle">야생멧돼지를 통한 확산을 막기 위해 수렵 활동 시 반드시 지켜야 할 필수 수칙입니다.</p>
+        </div>
+
+        <div class="grid-layout">
+          <!-- Card 1 -->
+          <div class="manual-card highlight">
+            <div class="card-icon"><i class="ri-alarm-warning-fill"></i></div>
+            <h3>강화된 수렵인 5대 방역 지침 (SOP 개정)</h3>
+            <ul class="check-list">
+              <li><i class="ri-check-line"></i> <b>현장 및 차량 소독:</b> 활동 전·후 철저한 소독 실시</li>
+              <li><i class="ri-check-line"></i> <b>포획 후 환복:</b> 오염 방지를 위해 즉시 환복</li>
+              <li><i class="ri-check-line"></i> <b>개체 밀봉:</b> 포획한 멧돼지는 반드시 밀봉 운반</li>
+              <li><i class="ri-check-line"></i> <b>전용화 착용:</b> 수렵 전용 신발 등 철저한 복장 분리</li>
+              <li><i class="ri-check-line"></i> <b>대형 보관함:</b> 차량 내 사체 전용 대용량 보관함 설치</li>
+            </ul>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="manual-card">
+            <div class="card-icon"><i class="ri-restaurant-2-line"></i></div>
+            <h3>잔반 관리 및 먹이주기 금지</h3>
+            <p>외국산 돼지고기나 가공품은 바이러스 매개체가 될 수 있습니다. 산행 중 남은 음식물을 버리거나 야생동물에게 급여하는 것을 엄격히 금지합니다.</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="manual-card">
+            <div class="card-icon"><i class="ri-megaphone-line"></i></div>
+            <h3>의심 폐사체 발견 즉시 신고</h3>
+            <p>귀, 배, 사지의 출혈이나 푸른 반점 등 감염 의심 개체 발견 시 절대 접촉하지 말고 즉시 신고하십시오.</p>
+            <div class="contact-box">국립환경과학원: <span>032-560-7143, 7156</span></div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="manual-card">
+            <div class="card-icon"><i class="ri-prohibited-line"></i></div>
+            <h3>사체 접촉 금지 및 격리</h3>
+            <p>폐사체에 절대 다가가지 마십시오. 동반한 사냥개도 접근하지 않도록 즉시 목줄 등으로 격리해야 통제를 유지할 수 있습니다.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="manual-card">
+            <div class="card-icon"><i class="ri-home-8-line"></i></div>
+            <h3>양돈농가 출입 통제</h3>
+            <p>발견 지점 및 수렵 환경을 노출한 경우 일체의 양돈 농가, 도축장 방문을 최소 <b>3일 이상 자제</b>해야 합니다. 불가피한 방문 시 삼중 소독이 필수입니다.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: Official Manual -->
+      <section id="tab-official" class="content-section">
+        <div class="section-header">
+          <h2>지자체 공무원 ASF 대응 매뉴얼</h2>
+          <p class="subtitle">위기 단계별('관심', '주의', '심각') 신속한 방역과 2차 피해 확산을 차단하는 현장 중심 수칙입니다.</p>
+        </div>
+
+        <div class="timeline-layout">
+          <div class="timeline-item">
+            <div class="time-marker"><i class="ri-flashlight-line"></i></div>
+            <div class="timeline-content">
+              <h3>1. 신속한 초기 대응 및 통제 체계 구축</h3>
+              <p>중앙사고수습본부와 공조하여 긴급 살처분 조치, 정밀 예찰검사, 반경 이동통제 초소를 즉각적으로 설치하고 매일 소독 인프라를 가동해야 합니다.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time-marker"><i class="ri-search-eye-line"></i></div>
+            <div class="timeline-content">
+              <h3>2. 방역 수칙 이행 점검 및 엄정 조치</h3>
+              <p>농가 내·외부 매일 소독, 돈사별 장화 갈아신기 등의 이행 여부를 철저히 점검합니다. 방역 위반 사항 확인 시 무관용 원칙 하에 관련 법령(가축전염병예방법 등)으로 조치합니다.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time-marker"><i class="ri-truck-line"></i></div>
+            <div class="timeline-content">
+              <h3>3. 오염원 차단 및 소독 역량 강화</h3>
+              <p>주요 발생지역(발생지 주변 10km)과 역학적 연관 농가 및 도로에 방제차량을 집중 투입합니다. 특히 하천변이나 차량 빈번 이동 경로를 중점 소독 구역으로 지정합니다.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time-marker"><i class="ri-bear-smile-line"></i></div>
+            <div class="timeline-content">
+              <h3>4. 환경부 공조 야생멧돼지 밀도 관리</h3>
+              <p>취약 경로 구역에 멧돼지 남하/이동 방지를 위한 광역 울타리를 점검하고, 포획틀·포획트랩 집중 운영 및 전담 포획단(수렵인) 투입을 적극 전개합니다.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="time-marker"><i class="ri-error-warning-line"></i></div>
+            <div class="timeline-content">
+              <h3>5. 취약 요인 예찰 및 교육 홍보</h3>
+              <p>모돈 농장이나 복합 영농 등 위험 요소가 높은 환경의 보안 조치(차단 방역 시설)를 개선토록 지시하며, 외국인 근로자에 대한 다국어 방역 수칙 안내와 쥐·해충 방제를 지도합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    // Tab switching logic
+    const navItems = document.querySelectorAll('.nav-item');
+    const sections = document.querySelectorAll('.content-section');
+
+    navItems.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active class
+        navItems.forEach(i => i.classList.remove('active'));
+        sections.forEach(s => s.classList.remove('active'));
+
+        // Add active class to clicked
+        btn.classList.add('active');
+        const targetId = btn.getAttribute('data-tab');
+        document.getElementById(targetId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
